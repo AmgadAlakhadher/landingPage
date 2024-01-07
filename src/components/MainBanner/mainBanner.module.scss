@@ -1,0 +1,55 @@
+.mainBanner{
+    position: relative;
+    height: 120vh;
+    &:after {
+        content: '';
+        background: url(../../assets/images/slider-left-dec.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 120vh;
+        z-index: 1;
+    }
+}
+.mainBanner__items{
+    position: absolute;
+    top: 60vh;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 2;    
+}
+.mainBanner__left{
+    // padding-top: 15%;
+}
+.mainBanner__left_title{
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+.mainBanner__left_desc{
+    line-height: 2;
+    font-size: .8rem;
+    // padding: 20px 0;
+}
+.mainBanner__left__btns .btn{
+    border: none;
+    border-radius: 30px;
+    padding: 12px 18px;
+    margin-left: 30px;
+    background: var(--dark-blue);
+    color: var(--white);
+    & .icon:last-child{
+        padding-top: 5px
+    }
+}
+.mainBanner__right{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-10%,-50%)
+}
+.mainBanner__right img{
+    width: 130%;
+}
