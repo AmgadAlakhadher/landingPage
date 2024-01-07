@@ -2,6 +2,9 @@
 import HeaderSection from './Common/HeaderSection/HeaderSection';
 export { HeaderSection };
 
+import Stars from './Common/Stars/Stars';
+export { Stars };
+
 import Header from './Header/Header';
 export { Header };
 
@@ -13,3 +16,6 @@ export { Services };
 
 import About from './About/About';
 export { About };
+
+import Clients from './Clients/Clients';
+export { Clients };

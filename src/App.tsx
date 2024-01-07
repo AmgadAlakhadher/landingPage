@@ -4,6 +4,7 @@ import {
   MainBanner,
   Services,
   About,
+  Clients,
 } from './components';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <MainBanner />
       <Services />
       <About />
+      <Clients />
     </>
   )
 }
