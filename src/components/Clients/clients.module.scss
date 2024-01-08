@@ -3,6 +3,10 @@
 }
 .clients__left__worker{
     align-items: center;
+    cursor: pointer;
+    &:hover{
+        color: var(--dark-blue);
+    }
     & .clients__left__worker_info{
         & .name{
             font-size: 1.1rem;
@@ -34,7 +38,28 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 60px 30px;
+    padding:  30px;
     border-radius: 30px;
     color: var(--white);
+    & .clients__right_desc_txt{
+        font-style: italic;
+        line-height: 2;
+    }
+}
+.clients__right__client{
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 30px;
+    & .clients__right__client_boxImg{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+        }
+    }
+    & .clients__right__client__info{
+        padding-left: 30px;
+    }
 }

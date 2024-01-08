@@ -45,11 +45,24 @@
     }
 }
 .mainBanner__right{
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-10%,-50%)
+    & .mainBanner__right_boxImg{
+     width: 100%;
+     margin: 120px;   
+    }
+    // width: 100%;
+    // position: absolute;
+    // top: 50%;
+    // left: 80%;
+    // transform: translate(-10%,-50%)
 }
 .mainBanner__right img{
-    width: 130%;
+    // width: 100%;
+    overflow: clip;
+    width: 120%;
+}
+
+@media (max-width: 992px){
+    .mainBanner::after{
+        background: transparent;
+    }
 }

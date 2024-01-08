@@ -19,3 +19,9 @@ export { About };
 
 import Clients from './Clients/Clients';
 export { Clients };
+
+import Pricing from './Pricing/Pricing';
+export { Pricing };
+
+import Footer from './Footer/Footer';
+export { Footer };

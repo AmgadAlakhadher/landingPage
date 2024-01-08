@@ -1,0 +1,94 @@
+
+.pricing__item__content{
+    position: relative;
+    margin-top: 100px;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: .2);
+    overflow: hidden;
+    &.business{
+        transform: scaleY(1.1);
+    }
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../../assets/images/regular-table-top.png);
+        z-index: 0;
+        content: '';
+        width: 274px;
+        height: 221px;
+    }
+    &.business::before{
+        background-image: url(../../assets/images/pro-table-top.png);
+        width: 281px;
+        height: 251px;
+    }
+    &::after{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url(../../assets/images/regular-table-bottom.png);
+        z-index: -1;
+        content: '';
+        width: 370px;
+        height: 171px;
+    }
+    &.business::after{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../assets/images/pro-table-bottom.png);
+        width: 100%;
+        height: 201px;
+    }
+    & .pricing__item__content_price{
+        position: relative;
+        z-index: 1;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--white);
+        margin: 0;
+        text-align: left;
+    }
+    & .pricing__item__content_img{
+        width: 120px;
+        height: 106px;
+        margin-bottom: 30px;
+    }
+    & .pricing__item__content_proprties {
+        padding: 0;
+        li{
+            line-height: 2;
+            font-size: .9rem;
+            font-weight: 400;
+            color: #afafaf;
+            text-decoration: line-through;
+            &.active{
+                color: var(--dark-blue);
+                text-decoration: none;
+            }
+        }
+    }
+    & .pricing__item__content_borderBtn{
+        border: var(--dark-blue) solid 1px;
+        border-radius: 23px;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: background .4s;
+        cursor: pointer;
+        &:hover{
+            background-color: var(--dark-blue);
+        }
+        & .link{
+            transition: color .4s;
+            color: var(--dark-blue);
+        }
+        &:hover .link{
+            color: var(--white);
+        }
+    }
+}
